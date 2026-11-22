@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Job Links</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="layout">
+    <aside>
+      <h1>Job Links</h1>
+      <form id="form" autocomplete="off">
+        <label for="url">Link</label>
+        <input id="url" type="text" placeholder="naukri.com or full link" required>
+        <button type="button" id="useTab" class="ghost">Use the page I was on</button>
+
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Optional, taken from the link if empty">
+
+        <label for="note">Note</label>
+        <textarea id="note" rows="4" placeholder="What you use it for, login email, etc."></textarea>
+
+        <div class="actions">
+          <button type="submit" id="save" class="primary">Add platform</button>
+          <button type="button" id="cancel" class="ghost" hidden>Cancel</button>
+        </div>
+        <p id="error" role="alert" hidden></p>
+      </form>
+    </aside>
+
+    <main>
+      <input id="search" type="search" placeholder="Search platforms and notes" hidden>
+      <ul id="list"></ul>
+      <p id="empty" hidden>No platforms yet. Paste a link on the left to add your first one.</p>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "Job Links",
+  "version": "1.1",
+  "description": "Keep all your job platforms in one place, with logos and notes.",
+  "permissions": ["storage", "activeTab"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_title": "Open Job Links" }
+}
